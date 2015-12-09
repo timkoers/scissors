@@ -21,7 +21,7 @@ import android.graphics.Rect;
 import android.os.Build;
 import android.view.MotionEvent;
 
-class TouchManager {
+public class TouchManager {
 
     private final int maxNumberOfTouchPoints;
     private final CropViewConfig cropViewConfig;
@@ -107,6 +107,10 @@ class TouchManager {
         position.add(moveDelta(0));
     }
 
+	public CropViewConfig getCropViewConfig(){
+		return cropViewConfig;
+	}
+	
     private void handlePinchGesture() {
         if (getDownCount() != 2) {
             return;

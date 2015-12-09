@@ -47,7 +47,7 @@ class CropViewConfig {
         return viewportHeightRatio;
     }
 
-    void setViewportHeightRatio(float viewportHeightRatio) {
+    public void setViewportHeightRatio(float viewportHeightRatio) {
         this.viewportHeightRatio =
                 viewportHeightRatio <= 0 ? DEFAULT_VIEWPORT_HEIGHT_RATIO : viewportHeightRatio;
     }
@@ -56,7 +56,7 @@ class CropViewConfig {
         return maxScale;
     }
 
-    void setMaxScale(float maxScale) {
+    public void setMaxScale(float maxScale) {
         this.maxScale = maxScale <= 0 ? DEFAULT_MAXIMUM_SCALE : maxScale;
     }
 
@@ -64,7 +64,7 @@ class CropViewConfig {
         return minScale;
     }
 
-    void setMinScale(float minScale) {
+    public void setMinScale(float minScale) {
         this.minScale = minScale <= 0 ? DEFAULT_MINIMUM_SCALE : minScale;
     }
 
